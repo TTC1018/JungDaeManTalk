@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="159.0" y="0.0">Server.ChatServer</node>
+    <node x="138.0" y="213.0">Thread.SendTh</node>
+    <node x="0.0" y="213.0">View.Profile</node>
+    <node x="0.0" y="0.0">Client.ChatClient</node>
+    <node x="0.0" y="142.0">View.ImageDir</node>
+    <node x="0.0" y="71.0">Thread.ReceiveTh</node>
+    <node x="145.0" y="142.0">Thread.SpreadTh</node>
+    <node x="152.0" y="71.0">View.ClientGUI</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic Group" zoom="1.0" x="575.0" y="222.5" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
