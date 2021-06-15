@@ -63,22 +63,21 @@ public class ClientGUI extends JFrame {
             add(BGLabel);
 
             //엔터 눌러서 메시지 전송
-            msgField.addKeyListener(new KeyAdapter() { // 엔터 눌러서 채팅 전송
-            public void keyPressed(KeyEvent e) {
-                String id = Profile.getNickname();
+            msgField.addKeyListener(new KeyAdapter() {
+                public void keyPressed(KeyEvent e) {
+                    String id = Profile.getNickname();
 
-                if (e.getKeyCode() == KeyEvent.VK_ENTER) {
+                    if (e.getKeyCode() == KeyEvent.VK_ENTER) {
 
-                    if (msgField.getText().equals("")) {
-                        return;
+                        if (msgField.getText().equals("")) {
+                            return;
+                        }
+                        tArea.append("[" + id + "] " + msgField.getText() + "\n");
+                        sTh.sendMsg();
+                        msgField.setText("");
                     }
-                    tArea.append("[" + id + "] " + msgField.getText() + "\n");
-                    sTh.sendMsg();
-                    msgField.setText("");
-
                 }
-                 }
-        });
+            });
 
             //창 닫히면 종료
             this.addWindowListener(new WindowAdapter() {
