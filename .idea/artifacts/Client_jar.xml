@@ -2,7 +2,7 @@
   <artifact type="jar" name="Client:jar">
     <output-path>$PROJECT_DIR$/out/artifacts/Client_jar</output-path>
     <root id="archive" name="chatproject.jar">
-      <element id="module-output" name="chatproject" />
+      <element id="module-output" name="JDMTalk" />
       <element id="dir-copy" path="$PROJECT_DIR$" />
     </root>
   </artifact>

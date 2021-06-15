@@ -62,6 +62,7 @@ public class ClientGUI extends JFrame {
             add(msgField);
             add(BGLabel);
 
+            //엔터 눌러서 메시지 전송
             msgField.addKeyListener(new KeyAdapter() { // 엔터 눌러서 채팅 전송
             public void keyPressed(KeyEvent e) {
                 String id = Profile.getNickname();
@@ -79,7 +80,7 @@ public class ClientGUI extends JFrame {
                  }
         });
 
-
+            //창 닫히면 종료
             this.addWindowListener(new WindowAdapter() {
                 @Override
                 public void windowClosing(WindowEvent e) {
